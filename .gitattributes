@@ -1,22 +1,27 @@
-# --- Prioritize Python for GitHub Linguist ---
+# --- Force GitHub Linguist to classify this repo as Python ---
 *.py linguist-language=Python
 *.py linguist-detectable=true
 
-# --- Ignore static and template files from language stats ---
-*.html linguist-detectable=false
+# --- Ignore frontend and vendor files ---
 *.css linguist-detectable=false
+*.scss linguist-detectable=false
+*.less linguist-detectable=false
 *.js linguist-detectable=false
+*.map linguist-detectable=false
 *.json linguist-detectable=false
 
-# --- Ignore folders typically not representing actual code ---
-migrations/* linguist-detectable=false
+# --- Ignore Django static/template/media files ---
 static/* linguist-detectable=false
 media/* linguist-detectable=false
 templates/* linguist-detectable=false
+
+# --- Ignore environment, migrations, and cache folders ---
+migrations/* linguist-detectable=false
 __pycache__/* linguist-detectable=false
 env/* linguist-detectable=false
 venv/* linguist-detectable=false
+node_modules/* linguist-detectable=false
 
-# --- Optional: ignore testing or config files from detection ---
-*.lock linguist-detectable=false
+# --- Optional: ignore docs and configs from stats ---
 *.md linguist-detectable=false
+*.lock linguist-detectable=false
