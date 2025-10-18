@@ -1,64 +1,62 @@
+# 🛍️ Artisync — Django Artisan Shop Platform
+![Build](https://img.shields.io/badge/build-passing-brightgreen.svg)
+![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
+![Made with Django](https://img.shields.io/badge/Made%20with-Django-092E20?logo=django)
+![Database](https://img.shields.io/badge/Database-MySQL-blue.svg)
 
-Artisync - artisan shop 
+A modern **e-commerce platform for artisans** built with **Django**, **MySQL**, **HTML**, **CSS**, and **Bootstrap**.  
+Artisync helps local artisans showcase, manage, and sell their handmade products through a simple yet powerful online shop interface.
 
-This web application enables clients to discover highly-rated artisans, explore their offered services, and place orders. After completing a transaction, clients can rate the artisans based on their experience.
+---
 
-## Features
+## ✨ Features
 
-- Find Top-Rated Artisans: Browse a list of artisans with high ratings to ensure you find the best professionals for your needs.
-- Explore Services: View detailed descriptions of services offered by artisans. Each service comes with information on pricing and availability.
-- Place Orders: Select the service you need and place an order seamlessly through the platform.
-- Rate and Review: After receiving the service, clients can rate artisans and leave reviews to share their experience with others.
-- Secure Payments: online payment option to complete your transactions safely.
+### 👨‍💼 Admin
+- Manage artisans, products, and customer accounts.  
+- View, approve, or delete product listings.  
+- Track orders and manage transactions.  
+- View insights and sales statistics from the dashboard.
 
+### 🧑‍🎨 Artisans
+- Create and manage artisan profiles.  
+- Add, update, or remove handmade product listings.  
+- View order requests and manage product availability.  
+- Track product performance through simple metrics.
 
-## Installation
+### 🛒 Customers
+- Browse and search for artisan products.  
+- Add items to cart, place orders, and view order history.  
+- Manage personal profiles and delivery addresses.  
+- Secure checkout process and responsive design.
 
-1. Clone the Repository
+---
 
+## ⚙️ Installation
 
+### 1️⃣ Clone the Repository
 ```bash
-git clone https://github.com/yourusername/artisan-services-platform.git
+git clone https://github.com/heyitsmanal/django-artisanShop-artisync.git
+cd django-artisanShop-artisync
 ```
-2. Install Dependencies
-
+### 2️⃣ Create and Activate a Virtual Environment
 ```bash
- pip install -r requirements.txt
+python -m venv venv
+source venv/bin/activate   # On Windows use: venv\Scripts\activate
+``` 
+### 3️⃣ Install Dependencies
+```bash
+pip install -r requirements.txt
 ```
-
-3. Apply Migrations
-
+### 4️⃣ Apply Migrations
 ```bash
+python manage.py makemigrations
 python manage.py migrate
 ```
-
-
-4. Run the Development Server
+### 5️⃣ Create Superuser
 ```bash
- python manage.py runserver
+python manage.py createsuperuser
 ```
-
-5. Visit the Application
-
-Open your web browser and go to http://localhost:8000 to start using the platform.
-
-
-## Contributing
-
-Contributions are always welcome!
-
-We welcome contributions to the Artisync Platform! If you have suggestions or improvements, please fork the repository and submit a pull request.
-
-
-## License
-
-[MIT](https://choosealicense.com/licenses/mit/)
-
-
-This project is licensed under the MIT License.
-
-
-
-## contact
-
-For any questions or inquiries, please reach out to aboulakjammanal27@gmail.com.
+### 6️⃣ Run the Server
+```bash
+python manage.py runserver
+```
