@@ -1,0 +1,22 @@
+# --- Prioritize Python for GitHub Linguist ---
+*.py linguist-language=Python
+*.py linguist-detectable=true
+
+# --- Ignore static and template files from language stats ---
+*.html linguist-detectable=false
+*.css linguist-detectable=false
+*.js linguist-detectable=false
+*.json linguist-detectable=false
+
+# --- Ignore folders typically not representing actual code ---
+migrations/* linguist-detectable=false
+static/* linguist-detectable=false
+media/* linguist-detectable=false
+templates/* linguist-detectable=false
+__pycache__/* linguist-detectable=false
+env/* linguist-detectable=false
+venv/* linguist-detectable=false
+
+# --- Optional: ignore testing or config files from detection ---
+*.lock linguist-detectable=false
+*.md linguist-detectable=false
